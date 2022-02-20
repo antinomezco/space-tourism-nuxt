@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home-bg-mobile': "url('@/assets/home/background-home-mobile.jpg')",
-        'home-bg-tablet': "url('@/assets/home/background-home-tablet.jpg')",
-        'home-bg-desktop': "url('@/assets/home/background-home-desktop.jpg')",
+        'home-bg-mobile': "url('/images/home/background-home-mobile.jpg')",
+        'home-bg-tablet': "url('/images/home/background-home-tablet.jpg')",
+        'home-bg-desktop': "url('/images/home/background-home-desktop.jpg')",
+        'destination-bg-mobile': "url('/images/destination/background-destination-mobile.jpg')",
+        'destination-bg-tablet': "url('/images/destination/background-destination-tablet.jpg')",
+        'destination-bg-desktop': "url('/images/destination/background-destination-desktop.jpg')",
       },  
     },
   },

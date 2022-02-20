@@ -1,10 +1,10 @@
 <!-- Please remove this file from your project -->
 <template>
-  <main
-    class="bg-home-bg-mobile bg-no-repeat text-2xl text-white h-screen bg-cover"
+  <div
+    class="bg-home-bg-mobile bg-no-repeat text-white h-fit bg-cover"
   >
     <TheHeader />
-    <div class="flex justify-center">
+    <main class="flex justify-center">
       <div class="w-5/6 text-center">
         <div class="barlow-condensed font-header-mobile">SO, YOU WANT TO TRAVEL TO</div>
         <div class="bellefair font-title-mobile my-8">SPACE</div>
@@ -13,8 +13,8 @@
           <div class="text-black bg-white rounded-full place-items-center grid h-full bellefair"  style="height: 150px; width: 150px">EXPLORE</div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script>
