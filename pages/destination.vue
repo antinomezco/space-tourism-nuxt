@@ -4,7 +4,7 @@
     class="bg-destination-bg-mobile text-white bg-cover "
   >
     <TheHeader />
-    <main class="w-5/6 mx-auto">
+    <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto">
       <div class="col-span-10 grid text-center">
         <div class="col-span-10">
         <div class="barlow-condensed font-header-mobile"><span class="tracking-widest font-bold text-gray-600">01 </span>Pick your destination</div>
@@ -30,6 +30,9 @@
       </div>
       </div>
     </main>
+    <div v-else>
+      {{ $route.query.celestialbody }} 
+    </div>
   </div>
 </template>
 
@@ -41,6 +44,11 @@ export default {
       celestial: data,
     }
   },
+  beforeCreate() {
+    if(!this.$route.query.celestialbody) {
+      this.$route.query.celestialbody = "0"
+    }
+  }
 }
 </script>
 
