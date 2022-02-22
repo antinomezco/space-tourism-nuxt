@@ -68,7 +68,7 @@ export default {
   right: 0 !important;
 }
 .menu__btn {
-  position: fixed;
+  position: absolute;
   top: 40px;
   right: 30px;
   width: 26px;

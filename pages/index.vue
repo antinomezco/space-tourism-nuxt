@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-home-bg-mobile md:bg-home-bg-tablet lg:bg-home-bg-desktop bg-no-repeat text-white h-screen bg-cover"
+    class="bg-home-bg-mobile md:bg-home-bg-tablet lg:bg-home-bg-desktop text-white h-screen bg-cover bg-fixed bg-bottom"
   >
     <TheHeader />
-    <main class="h-full flex">
+    <main class="flex">
       <div class="lg:flex-row flex flex-col self-center">
         <div class="flex justify-center lg:text-left text-center">
           <div class="w-5/6 md:w-3/4 lg:w-1/2 md:pt-12">
