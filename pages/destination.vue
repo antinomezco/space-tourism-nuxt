@@ -1,7 +1,7 @@
 /* eslint-disable no-debugger, no-console */
 <template>
   <div
-    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white bg-cover"
+    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white h-screen bg-cover bg-fixed bg-bottom"
   >
     <TheHeader />
     <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left">
