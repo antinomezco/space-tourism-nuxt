@@ -1,43 +1,7 @@
-.bellefair {
-  font-family: "Bellefair";
-}
-
-.barlow-condensed {
-  font-family: "Barlow Condensed";
-}
-
-.barlow {
-  font-family: "Barlow";
-}
-
-.font-header-mobile {
-  font-size: 16px;
-}
-
-.font-title-mobile {
-  font-size: 80px;
-}
-
-.font-regular-mobile {
-  font-size: 15px;
-}
-
-.font-size-planet {
-  font-size: 56px;
-}
-
-.font-size-planet-data-title {
-  font-size: 14px;
-}
-
-.font-size-planet-data-desc {
-  font-size: 28px;
+.hr-grayish {
+  border-color: #979797;
 }
 
 .font-color-blueish {
   color: #D0D6F9;
-}
-
-.hr-grayish {
-  border-color: #979797;
 }

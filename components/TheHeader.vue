@@ -1,18 +1,31 @@
 <template>
-  <header class="flex justify-between p-5">
-    <a href="/"><img src="/images/shared/logo.svg" alt="" /></a>
+  <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 font-barlow tracking-medium-spacing">
+    <a href="/" class="md:px-8 p-5"><img class="image-size" src="/images/shared/logo.svg" alt="" /></a>
 
-    <div class="hamburger-menu">
+    <div class="hidden lg:flex line-1 -mr-12"></div>
+
+    <div>
+      <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex flex-row lg:px-8">
+        <li v-for="link in links" :key=link.link_to class="mx-7 lg:my-9 md:my-4">
+          <nuxt-link class="flex nav-text" :to=link.link_to>
+            <span class="font-bold md:hidden lg:inline">{{link.link_number}}</span>&nbsp;&nbsp;{{link.link_name}}
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hamburger-menu md:hidden">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
         <span></span>
       </label>
 
       <ul class="menu__box uppercase text-white font-header-mobile barlow-condensed">
-        <li><nuxt-link class="menu__item" to="/"><span class="font-bold">00 </span>Home</nuxt-link></li>
-        <li><nuxt-link class="menu__item" to="destination"><span class="font-bold">01 </span>Destination</nuxt-link></li>
-        <li><a class="menu__item" href="#"><span class="font-bold">02 </span>Crew</a></li>
-        <li><a class="menu__item" href="#"><span class="font-bold">03 </span>Technology</a></li>
+        <li v-for="link in links" :key=link.link_to>
+          <nuxt-link class="menu__item" :to=link.link_to>
+            <span class="font-bold">{{link.link_number}} </span>{{link.link_name}}
+          </nuxt-link>
+        </li>
       </ul>
     </div>
 
@@ -23,6 +36,16 @@
 
 <script>
 export default {
+  data() {
+    return {
+      links: [
+        {link_to: "/", link_name: "Home", link_number: "00 "},
+        {link_to: "destination", link_name: "Destination", link_number: "01 "},
+        {link_to: "crew", link_name: "Crew", link_number: "02 "},
+        {link_to: "technology", link_name: "Technology", link_number: "03  "},
+      ]
+    }
+  }
 }
 </script>
 
@@ -51,7 +74,7 @@ export default {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -84,6 +107,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.95);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: 0.25s;
+  z-index: 1;
 }
 .menu__item {
   display: block;
@@ -93,5 +117,20 @@ export default {
 }
 .menu__item:hover {
   background-color: #cfd8dc;
+}
+
+.header-tablet {
+  background-color: rgba(151, 151, 151, 0.15);
+}
+
+.line-1 {
+  height: 1px;
+  width:70%;
+  background: rgba(151, 151, 151, 0.35)
+}
+
+.image-size {
+  min-height: 48px;
+  min-width: 48px;
 }
 </style>
