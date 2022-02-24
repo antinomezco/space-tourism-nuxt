@@ -30,13 +30,17 @@ module.exports = {
       },
       fontFamily: {
         'bellefair': ['Bellefair'],
-        'barlow-condensed': ['Barlow Condensed']
+        'barlow-condensed': ['"Barlow Condensed"'],
+        'barlow': ['Barlow']
       },
       letterSpacing: {
         'small-spacing' : '2.35px',
         'medium-spacing' : '2.7px',
         'big-spacing' : '4.75px',
         'big-spacing-tablet' : '3.38px'
+      },
+      lineHeight: {
+        'regular-text' : '32px'
       }
     },
   },

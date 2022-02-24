@@ -1,12 +1,12 @@
 /* eslint-disable no-debugger, no-console */
 <template>
   <div
-    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white h-screen bg-cover bg-fixed bg-bottom"
+    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white lg:h-screen h-full bg-cover bg-fixed bg-bottom"
   >
     <TheHeader />
-    <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left">
-      <div class="barlow-condensed font-header-mobile">
-        <span class="tracking-widest font-bold text-gray-600">01 </span>Pick
+    <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left grid content-center h-5/6">
+      <div class="font-barlow-condensed text-heading-5">
+        <span class="tracking-big-spacing font-bold text-gray-600">01 </span>Pick
         your destination
       </div>
       <div class="lg:flex">
@@ -25,26 +25,26 @@
         </div>
         <div class="col-span-10  lg:w-1/2">
           <TheNavCelestial />
-          <div class="bellefair font-size-planet uppercase">
+          <div class="font-bellefair text-heading-2 uppercase">
             {{ celestial.destinations[`${$route.query.celestialbody}`].name }}
           </div>
           <div
-            class="barlow leading-loose font-regular-mobile pb-5 font-color-blueish"
+            class="font-barlow text-regular-text pb-5 font-color-blueish lg:leading-regular-text"
           >
             {{
               celestial.destinations[`${$route.query.celestialbody}`]
                 .description
             }}
           </div>
-          <hr class="pt-5 hr-grayish" />
-          <div class="space-y-5 pb-5 md:space-y-0 md:flex md:justify-around lg:justify-start lg:space-x-12">
+          <div class="w-full border-t border-gray-700 my-8"></div>
+          <div class="space-y-5 pb-5 md:space-y-0 md:flex md:justify-around lg:justify-start lg:space-x-12 ">
             <div class="space-y-2">
               <div
-                class="barlow-condensed uppercase font-size-planet-data-title font-color-blueish"
+                class="font-barlow-condensed text-sheading-2 tracking-small-spacing uppercase font-color-blueish"
               >
                 AVG. DISTANCE
               </div>
-              <div class="bellefair font-size-planet-data-desc">
+              <div class="font-bellefair text-sheading-1">
                 {{
                   celestial.destinations[`${$route.query.celestialbody}`]
                     .distance
@@ -53,11 +53,11 @@
             </div>
             <div class="space-y-2">
               <div
-                class="barlow-condensed uppercase font-size-planet-data-title font-color-blueish"
+                class="font-barlow-condensed text-sheading-2 tracking-small-spacing uppercase font-color-blueish"
               >
                 Est. travel time
               </div>
-              <div class="bellefair font-size-planet-data-desc">
+              <div class="font-bellefair text-sheading-1">
                 {{
                   celestial.destinations[`${$route.query.celestialbody}`].travel
                 }}

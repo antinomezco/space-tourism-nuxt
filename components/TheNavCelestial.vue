@@ -1,19 +1,10 @@
 <template>
-  <nav class="px-2 sm:px-4 py-2.5">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <div class="w-full">
-      <ul class="flex flex-row mx-4 font-barlow tracking-medium-spacing justify-center lg:justify-start">
-        <li>
-          <nuxt-link to="?celestialbody=0" class="hover-underline-animation font-color-blueish block py-2 pr-4 pl-3 hover:text-white transition duration-300 active:text-white">Moon</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="?celestialbody=1" class="hover-underline-animation font-color-blueish block py-2 pr-4 pl-3 hover:text-white transition duration-300 active:text-white">Mars</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="?celestialbody=2" class="hover-underline-animation font-color-blueish block py-2 pr-4 pl-3 hover:text-white transition duration-300 active:text-white">Titan</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="?celestialbody=3" class="hover-underline-animation font-color-blueish block py-2 pr-4 pl-3 hover:text-white transition duration-300 active:text-white">Europa</nuxt-link>
+  <nav class="px-2 sm:px-4 lg:px-0 py-2.5">
+  <div class="container flex flex-wrap justify-between items-center mx-auto lg:mx-0 ">
+    <div class="lg:mx-0 mx-auto">
+      <ul class="flex flex-row font-barlow tracking-medium-spacing justify-center lg:justify-start">
+        <li v-for="(celestial, index) in celestials.destinations" :key="index">
+          <nuxt-link :to="`?celestialbody=${index}`" class="hover-underline-animation font-color-blueish block pb-3 mr-4 hover:text-white transition duration-300 active:text-white">{{ celestial.name }}</nuxt-link>
         </li>
       </ul>
     </div>
@@ -22,8 +13,14 @@
 </template>
 
 <script>
-export default {
 
+import data from "../static/data/data.json"
+export default {
+  data() {
+    return {
+      celestials: data,
+    }
+  },
 }
 </script>
 

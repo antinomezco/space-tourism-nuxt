@@ -46,7 +46,7 @@ export default {
   googleFonts: {
     families: {
       Bellefair: true,
-      'Barlow Condensed': true,
+      'Barlow+Condensed': true,
       Barlow: true
     }
   }
