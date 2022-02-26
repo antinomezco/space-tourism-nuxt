@@ -5,8 +5,8 @@
   >
     <TheHeader />
     <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left grid content-center h-5/6">
-      <div class="font-barlow-condensed text-heading-5">
-        <span class="tracking-big-spacing font-bold text-gray-600">01 </span>Pick
+      <div class="font-barlow-condensed md:text-left md:text-sheading-1 lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
+        <span class="font-bold text-gray-600">01 </span>Pick
         your destination
       </div>
       <div class="lg:flex">
@@ -25,7 +25,7 @@
         </div>
         <div class="col-span-10  lg:w-1/2">
           <TheNavCelestial />
-          <div class="font-bellefair text-heading-2 uppercase">
+          <div class="font-bellefair text-heading-3 md:text-heading-1-mobile lg:text-heading-2 uppercase">
             {{ celestial.destinations[`${$route.query.celestialbody}`].name }}
           </div>
           <div
@@ -83,7 +83,8 @@ export default {
   },
   beforeCreate() {
     if (!this.$route.query.celestialbody) {
-      this.$route.query.celestialbody = "0"
+      this.$router.push({ query: {'celestialbody': "0"} });
+      // this.$route.query.celestialbody = "0"
     }
   },
 }

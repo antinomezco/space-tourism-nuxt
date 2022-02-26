@@ -10,7 +10,7 @@
     "
   >
     <TheHeader />
-    <main class="grid content-center h-5/6">
+    <main class="grid content-center lg:h-5/6">
       <div class="grid grid-cols-12 lg:space-y-0 space-y-44 pb-8">
         <div
           class="
@@ -22,7 +22,7 @@
             lg:col-span-6
           "
         >
-          <div class="w-5/6 md:w-3/5 lg:w-3/4 md:pt-12">
+          <div class="w-5/6 md:w-3/5 lg:w-3/4">
             <div
               class="
                 lg:text-heading-5

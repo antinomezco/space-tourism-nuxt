@@ -10,6 +10,9 @@ module.exports = {
         'destination-bg-mobile': "url('/images/destination/background-destination-mobile.jpg')",
         'destination-bg-tablet': "url('/images/destination/background-destination-tablet.jpg')",
         'destination-bg-desktop': "url('/images/destination/background-destination-desktop.jpg')",
+        'crew-bg-mobile': "url('/images/crew/background-crew-mobile.jpg')",
+        'crew-bg-tablet': "url('/images/crew/background-crew-tablet.jpg')",
+        'crew-bg-desktop': "url('/images/crew/background-crew-desktop.jpg')",
       },
       fontSize: {
         'heading-1' : '150px',
