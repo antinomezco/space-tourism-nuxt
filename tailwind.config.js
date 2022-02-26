@@ -26,7 +26,9 @@ module.exports = {
         'heading-4-mobile' : '20px',
         'regular-text' : '18px',
         'heading-5-tablet' : '20px',
+        'heading-5-tablet-24' : '24px',
         'heading-5-mobile' : '16px',
+        'sheading-1-40' : '40px',
         'regular-text-tablet' : '16px',
         'regular-text-mobile' : '15px',
         'heading-1-mobile' : '80px',
@@ -43,7 +45,8 @@ module.exports = {
         'big-spacing-tablet' : '3.38px'
       },
       lineHeight: {
-        'regular-text' : '32px'
+        'regular-text' : '32px',
+        'regular-text-tablet' : '28px'
       }
     },
   },
