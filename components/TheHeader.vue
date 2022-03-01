@@ -2,7 +2,7 @@
   <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 font-barlow tracking-medium-spacing">
     <a href="/" class="md:px-8 p-5"><img class="image-size" src="/images/shared/logo.svg" alt="" /></a>
 
-    <div class="hidden lg:flex line-1 -mr-12"></div>
+    <div class="hidden lg:flex line-1 ml-12 -mr-12"></div>
 
     <div>
       <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex flex-row lg:px-8">

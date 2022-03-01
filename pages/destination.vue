@@ -1,11 +1,11 @@
 /* eslint-disable no-debugger, no-console */
 <template>
   <div
-    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white lg:h-screen h-full bg-cover bg-fixed bg-bottom"
+    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white md:h-screen h-full bg-cover bg-fixed bg-bottom"
   >
     <TheHeader />
     <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left grid content-center h-5/6">
-      <div class="font-barlow-condensed md:text-left md:text-sheading-1 lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
+      <div class="flex justify-center md:justify-start md:py-6 md:pl-8 font-barlow-condensed md:text-left md:heading-5-tablet lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
         <span class="font-bold text-gray-600">01 </span>Pick
         your destination
       </div>

@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .circle {
   height: 15px;
   width: 15px;
