@@ -1,44 +1,50 @@
 /* eslint-disable no-debugger, no-console */
 <template>
   <div
-    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white md:h-screen h-full bg-cover bg-fixed bg-bottom"
+    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white md:h-full h-full bg-cover bg-fixed bg-bottom"
   >
     <TheHeader />
-    <main v-if="$route.query.celestialbody" class="w-5/6 mx-auto text-center lg:text-left grid content-center h-5/6">
-      <div class="flex justify-center md:justify-start md:py-6 md:pl-8 font-barlow-condensed md:text-left md:heading-5-tablet lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
-        <span class="font-bold text-gray-600">01 </span>Pick
-        your destination
-      </div>
-      <div class="lg:flex">
-        <div class="grid-cols-12 grid md:text-left flex flex-col lg:w-1/2">
-          <div
-            class="grid col-span-6 col-start-4 md:col-span-4 md:col-start-5 lg:col-span-10 lg:col-start-2"
-          >
+    <main class="static  mx-auto">
+      <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center">
+
+        <div class="grid col-span-10 col-start-2 lg:col-span-12 lg:col-start-2">
+          <h1 class="flex justify-center text-center md:block font-barlow-condensed md:text-left md:heading-5-tablet lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
+            <span class="font-bold text-gray-600">01 </span>Pick your destination
+          </h1>
+        </div>
+
+        <div class="grid col-span-6 col-start-4 md:col-span-12 md:mx-auto lg:col-span-6 lg:row-span-4 lg:col-start-2">
+          <div class="md:w-1/2 md:mx-auto lg:w-full">
             <img
-              class="py-8 lg:px-8"
-              :src="
-                celestial.destinations[`${$route.query.celestialbody}`].images
-                  .webp
-              "
+              class="pt-8 lg:px-8"
+              :src=" celestial.destinations[`${$route.query.celestialbody}`].images.webp"
             />
           </div>
         </div>
-        <div class="col-span-10  lg:w-1/2">
-          <TheNavCelestial />
-          <div class="font-bellefair text-heading-3 md:text-heading-1-mobile lg:text-heading-2 uppercase">
-            {{ celestial.destinations[`${$route.query.celestialbody}`].name }}
+
+        <TheNavCelestial class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-0 lg:text-left" />
+
+        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 pb-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-0 lg:text-left">
+          <div class="space-y-2">
+            <div class="font-bellefair text-heading-3 md:text-heading-1-mobile lg:text-heading-2 uppercase">
+              {{
+                  celestial.destinations[`${$route.query.celestialbody}`]
+                    .name
+                }}
+            </div>
+            <div class="font-barlow text-regular-text pb-5 font-color-blueish lg:leading-regular-text">
+              {{
+                  celestial.destinations[`${$route.query.celestialbody}`]
+                    .description
+                }}
+            </div>
           </div>
-          <div
-            class="font-barlow text-regular-text pb-5 font-color-blueish lg:leading-regular-text"
-          >
-            {{
-              celestial.destinations[`${$route.query.celestialbody}`]
-                .description
-            }}
-          </div>
-          <div class="w-full border-t border-gray-700 my-8"></div>
-          <div class="space-y-5 pb-5 md:space-y-0 md:flex md:justify-around lg:justify-start lg:space-x-12 ">
-            <div class="space-y-2">
+        </div>
+
+        <div class="col-span-10 col-start-2 border-t border-gray-700 my-8 lg:col-span-4 lg:col-start-0"></div>
+
+        <div class="col-span-10 grid-cols-4 text-center lg:text-left mx-auto lg:mx-0 col-start-2 grid-flow-row grid gap-3 md:gap-12 pb-5 lg:col-span-4 lg:col-start-0">
+            <div class="space-y-2 col-span-4 lg:col-span-2">
               <div
                 class="font-barlow-condensed text-sheading-2 tracking-small-spacing uppercase font-color-blueish"
               >
@@ -51,7 +57,7 @@
                 }}
               </div>
             </div>
-            <div class="space-y-2">
+            <div class="space-y-2 col-span-4 lg:col-span-2">
               <div
                 class="font-barlow-condensed text-sheading-2 tracking-small-spacing uppercase font-color-blueish"
               >
@@ -64,12 +70,9 @@
               </div>
             </div>
           </div>
-        </div>
+
       </div>
     </main>
-    <div v-else>
-      {{ $route.query.celestialbody }}
-    </div>
   </div>
 </template>
 
