@@ -5,8 +5,8 @@
     <main class="static container mx-auto">
       <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center">
 
-        <div class="grid col-span-10 col-start-2 lg:col-span-6 lg:col-start-2">
-          <h1 class="flex justify-center text-center md:block font-barlow-condensed md:text-left md:heading-5-tablet lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
+        <div class="grid col-span-10 col-start-2 lg:col-span-12 lg:col-start-2 py-8">
+          <h1 class="flex justify-center text-heading-4-mobile text-center md:block font-barlow-condensed md:text-left md:heading-5-tablet lg:text-heading-5 uppercase lg:tracking-big-spacing md:tracking-big-spacing-tablet tracking-medium-spacing">
             <span class="font-bold text-gray-600">02&nbsp;</span>meet your crew
           </h1>
         </div>

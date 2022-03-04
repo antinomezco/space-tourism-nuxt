@@ -6,10 +6,11 @@
           <li
             v-for="(tech, index) in data.technology"
             :key="index"
-          >
+          > 
+          <!-- <div class="font-bold text-gray-700 rounded-full bg-white flex  font-mono" style="height: 500px; width: 500px; font-size: 170px;">404</div> -->
             <nuxt-link
               :to="`?tech=${index}`"
-              class="circle-fill font-color-blueish block pb-3 text-heading-4 font-bellefair"
+              class="circle-fill items-center w-12 h-12 md:w-20 md:h-20 justify-center font-color-blueish block text-regular-text  md:text-heading-4 font-bellefair"
             >{{ index+1 }}</nuxt-link>
           </li>
         </ul>
@@ -31,13 +32,13 @@ export default {
 
 <style scoped>
 .circle-fill {
+  display: table-cell;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  padding: 13px;
   border: 2px solid #979797;
   color: white;
   text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
 }
 
 .circle-fill:hover {

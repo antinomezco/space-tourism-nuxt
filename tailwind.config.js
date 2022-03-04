@@ -13,6 +13,9 @@ module.exports = {
         'crew-bg-mobile': "url('/images/crew/background-crew-mobile.jpg')",
         'crew-bg-tablet': "url('/images/crew/background-crew-tablet.jpg')",
         'crew-bg-desktop': "url('/images/crew/background-crew-desktop.jpg')",
+        'tech-bg-mobile': "url('/images/technology/background-technology-mobile.jpg')",
+        'tech-bg-tablet': "url('/images/technology/background-technology-tablet.jpg')",
+        'tech-bg-desktop': "url('/images/technology/background-technology-desktop.jpg')",
       },
       fontSize: {
         'heading-1' : '150px',
@@ -46,7 +49,8 @@ module.exports = {
       },
       lineHeight: {
         'regular-text' : '32px',
-        'regular-text-tablet' : '28px'
+        'regular-text-tablet' : '28px',
+        'regular-text-mobile' : '25px'
       }
     },
   },
