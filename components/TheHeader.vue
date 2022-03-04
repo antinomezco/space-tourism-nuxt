@@ -40,9 +40,9 @@ export default {
     return {
       links: [
         {link_to: "/", link_name: "Home", link_number: "00 "},
-        {link_to: "destination", link_name: "Destination", link_number: "01 "},
-        {link_to: "crew", link_name: "Crew", link_number: "02 "},
-        {link_to: "technology", link_name: "Technology", link_number: "03  "},
+        {link_to: "destination?celestialbody=0", link_name: "Destination", link_number: "01 "},
+        {link_to: "crew?member=0", link_name: "Crew", link_number: "02 "},
+        {link_to: "technology?tech=0", link_name: "Technology", link_number: "03  "},
       ]
     }
   }

@@ -55,7 +55,8 @@
         </div>
         <div class="col-span-12 lg:col-span-6 grid place-content-center">
           <div class="">
-            <div
+            <nuxt-link 
+              to="destination?celestialbody=0"
               class="
                 w-36
                 h-36
@@ -75,7 +76,7 @@
               "
             >
               EXPLORE
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>

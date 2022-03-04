@@ -10,7 +10,7 @@
         <div class="heading-1 my-8">SPACE</div>
         <div class="barlow-condensed  leading-loose font-regular-mobile">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</div>
         <div class="flex justify-center mt-20">
-          <div class="text-black bg-white rounded-full place-items-center grid h-full bellefair"  style="height: 150px; width: 150px">EXPLORE</div>
+          <nuxt-link to="destination?celestialbody=0" class="text-black bg-white rounded-full place-items-center grid h-full bellefair"  style="height: 150px; width: 150px">EXPLORE</nuxt-link>
         </div>
       </div>
     </main>
