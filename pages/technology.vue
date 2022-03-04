@@ -11,13 +11,13 @@
           </h1>
         </div>
 
-        <div class="grid col-span-12 col-start-0 lg:col-span-6 lg:row-span-4 lg:col-start-9 lg:justify-end">
+        <div class="grid col-span-12 col-start-0 lg:col-span-6 lg:row-span-5 lg:col-start-9 lg:justify-end">
           <img
             class="w-full lg:hidden"
             :src=" spaceship.technology[`${$route.query.tech}`].images.landscape"
           />
           <img
-            class=""
+            class="hidden lg:inline-block"
             :src=" spaceship.technology[`${$route.query.tech}`].images.portrait"
           />
         </div>
