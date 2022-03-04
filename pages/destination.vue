@@ -13,7 +13,7 @@
           </h1>
         </div>
 
-        <div class="grid col-span-6 col-start-4 md:col-span-12 md:mx-auto lg:col-span-6 lg:row-span-4 lg:col-start-2">
+        <div class="grid col-span-6 col-start-4 md:col-span-12 md:mx-auto lg:col-span-6 lg:row-span-4 lg:col-start-1">
           <div class="md:w-1/2 md:mx-auto lg:w-full">
             <img
               class="pt-8 lg:px-8"
@@ -22,9 +22,9 @@
           </div>
         </div>
 
-        <TheNavCelestial class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-0 lg:text-left" />
+        <TheNavCelestial class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-8 lg:text-left" />
 
-        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 pb-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-0 lg:text-left">
+        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 pb-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-8 lg:text-left">
           <div class="space-y-2">
             <div class="font-bellefair text-heading-3 md:text-heading-1-mobile lg:text-heading-2 uppercase">
               {{
@@ -41,9 +41,9 @@
           </div>
         </div>
 
-        <div class="col-span-10 col-start-2 border-t border-gray-700 my-8 lg:col-span-4 lg:col-start-0"></div>
+        <div class="col-span-10 col-start-2 border-t border-gray-700 my-8 lg:col-span-4 lg:col-start-8"></div>
 
-        <div class="col-span-10 grid-cols-4 text-center lg:text-left mx-auto lg:mx-0 col-start-2 grid-flow-row grid gap-3 md:gap-12 pb-5 lg:col-span-4 lg:col-start-0">
+        <div class="col-span-10 grid-cols-4 text-center lg:text-left mx-auto lg:mx-0 col-start-2 grid-flow-row grid gap-3 md:gap-12 pb-5 lg:col-span-4 lg:col-start-8">
             <div class="space-y-2 col-span-4 lg:col-span-2">
               <div
                 class="font-barlow-condensed text-sheading-2 tracking-small-spacing uppercase font-color-blueish"

@@ -1,5 +1,5 @@
 <template>
-  <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 font-barlow tracking-medium-spacing">
+  <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 lg:pb-12 font-barlow tracking-medium-spacing">
     <a href="/" class="md:px-8 p-5"><img class="image-size" src="/images/shared/logo.svg" alt="" /></a>
 
     <div class="hidden lg:flex line-1 ml-12 -mr-12"></div>
