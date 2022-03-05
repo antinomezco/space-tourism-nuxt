@@ -87,7 +87,6 @@ export default {
   beforeCreate() {
     if (!this.$route.query.celestialbody) {
       this.$router.push({ query: {'celestialbody': "0"} });
-      // this.$route.query.celestialbody = "0"
     }
   },
 }

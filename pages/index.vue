@@ -22,6 +22,7 @@
             lg:col-span-6
           "
         >
+          <h1 class="sr-only">So, you want to travel to space</h1>
           <div class="w-5/6 md:w-3/5 lg:w-3/4">
             <div
               class="
