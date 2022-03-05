@@ -13,6 +13,7 @@
 
         <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-4 lg:row-span-5">
           <img
+            :alt="`Picture of ${members.crew[`${$route.query.member}`].name}, ${members.crew[`${$route.query.member}`].role}`"
             class="pt-8 lg:mx-8"
             :src=" members.crew[`${$route.query.member}`].images.webp"
           />
@@ -33,7 +34,7 @@
                     .role
                 }}
             </div>
-            <div class="font-bellefair text-sheading-1 md:text-sheading-1-40 lg:text-heading-2">
+            <div class="font-bellefair text-sheading-1 md:text-sheading-1-40 lg:text-heading-3">
               {{
                   members.crew[`${$route.query.member}`]
                     .name

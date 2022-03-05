@@ -13,10 +13,12 @@
 
         <div class="grid col-span-12 col-start-0 lg:col-span-6 lg:row-span-5 lg:col-start-9 lg:justify-end">
           <img
+            :alt="`Picture of ${spaceship.technology[`${$route.query.tech}`].name}`"
             class="w-full lg:hidden"
             :src=" spaceship.technology[`${$route.query.tech}`].images.landscape"
           />
           <img
+            :alt="`Picture of ${spaceship.technology[`${$route.query.tech}`].name}`"
             class="hidden lg:block mb-9"
             :src=" spaceship.technology[`${$route.query.tech}`].images.portrait"
           />
@@ -24,7 +26,7 @@
 
         <TheNavTech class="col-span-10 col-start-2 lg:col-span-1 lg:col-start-2 lg:row-span-3 lg:row-start-3" />
 
-        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-3 lg:row-start-4 lg:text-left">
+        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 md:space-y-0 lg:space-x-12 lg:col-span-6 lg:col-start-3 lg:row-start-4 lg:text-left">
           <div class="space-y-8">
             <div class="font-barlow-condensed text-sheading-2 font-color-blueish tracking-small-spacing md:regular-text-tablet uppercase ">
               The terminology...

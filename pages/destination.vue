@@ -16,6 +16,7 @@
         <div class="grid col-span-6 col-start-4 md:col-span-12 md:mx-auto lg:col-span-6 lg:row-span-4 lg:col-start-1 lg:row-start-3">
           <div class="md:w-1/2 md:mx-auto lg:w-full">
             <img
+              :alt="`Picture of ${celestial.destinations[`${$route.query.celestialbody}`].name}`"
               class="pt-8 lg:px-8"
               :src=" celestial.destinations[`${$route.query.celestialbody}`].images.webp"
             />
