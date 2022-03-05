@@ -1,7 +1,7 @@
 /* eslint-disable no-debugger, no-console */
 <template>
   <div
-    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white md:h-full h-full bg-cover bg-fixed bg-bottom"
+    class="bg-destination-bg-mobile md:bg-destination-bg-tablet lg:bg-destination-bg-desktop text-white md:h-full h-full bg-cover bg-scroll bg-bottom"
   >
     <TheHeader />
     <main class="static  mx-auto">

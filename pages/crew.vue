@@ -1,6 +1,6 @@
 /* eslint-disable no-debugger, no-console */
 <template>
-  <div class="bg-crew-bg-mobile md:bg-crew-bg-tablet lg:bg-crew-bg-desktop text-white md:h-full h-screen bg-cover bg-fixed bg-bottom">
+  <div class="bg-crew-bg-mobile md:bg-crew-bg-tablet lg:bg-crew-bg-desktop text-white md:h-full h-screen bg-cover bg-scroll bg-bottom">
     <TheHeader />
     <main class="static container mx-auto">
       <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center">
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <hr class="col-span-10 col-start-2 block md:hidden border-gray-700 h-5" />
+        <hr class="col-span-10 col-start-2 block md:hidden border-gray-700 h-5" style="margin-top:-1.5rem;" />
 
         <TheNavCrew class="col-span-10 col-start-2 md:order-2 lg:col-span-6 lg:col-start-3 lg:text-left" />
 

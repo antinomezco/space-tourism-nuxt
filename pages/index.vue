@@ -6,7 +6,7 @@
       lg:bg-home-bg-desktop
       text-white
       h-screen
-      bg-cover bg-fixed bg-bottom
+      bg-cover bg-scroll bg-bottom
     "
   >
     <TheHeader />
