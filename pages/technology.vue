@@ -2,7 +2,7 @@
 <template>
   <div class="bg-tech-bg-mobile md:bg-tech-bg-tablet lg:bg-tech-bg-desktop text-white h-screen lg:h-full bg-cover bg-fixed bg-bottom">
     <TheHeader />
-    <main class="static  mx-auto">
+    <main class="static mx-auto">
       <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center lg:pb-8">
 
         <div class="grid col-span-10 col-start-2 lg:col-span-12 lg:col-start-2 py-8">
@@ -17,7 +17,7 @@
             :src=" spaceship.technology[`${$route.query.tech}`].images.landscape"
           />
           <img
-            class="hidden lg:inline-block"
+            class="hidden lg:block mb-9"
             :src=" spaceship.technology[`${$route.query.tech}`].images.portrait"
           />
         </div>

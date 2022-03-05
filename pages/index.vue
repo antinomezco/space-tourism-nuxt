@@ -10,7 +10,7 @@
     "
   >
     <TheHeader />
-    <main class="grid content-center lg:h-5/6">
+    <main class="grid content-center lg:h-3/4">
       <div class="grid grid-cols-12 lg:space-y-0 space-y-44 pb-8">
         <div
           class="
@@ -66,6 +66,7 @@
                 text-black
                 rounded-full
                 flex
+                cursor-pointer
                 justify-center
                 items-center
                 text-center

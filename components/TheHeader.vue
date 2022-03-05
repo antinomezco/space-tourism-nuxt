@@ -1,13 +1,13 @@
 <template>
-  <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 lg:pb-12 font-barlow tracking-medium-spacing">
+  <header class="flex lg:justify-center md:justify-between relative pt items-center lg:pt-5 lg:pb-12 font-barlow tracking-medium-spacing md:pb-7">
     <a href="/" class="md:px-8 p-5"><img class="image-size" src="/images/shared/logo.svg" alt="" /></a>
 
     <div class="hidden lg:flex line-1 ml-12 -mr-12"></div>
 
     <div>
-      <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex flex-row lg:px-8">
+      <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex-row lg:px-8 md:py-5 lg:py-0">
         <li v-for="link in links" :key=link.link_to class="mx-7 lg:my-9 md:my-4">
-          <nuxt-link class="flex nav-text" :to=link.link_to>
+          <nuxt-link class="underlined flex nav-text" :to=link.link_to>
             <span class="font-bold md:hidden lg:inline">{{link.link_number}}</span>&nbsp;&nbsp;{{link.link_name}}
           </nuxt-link>
         </li>
@@ -49,7 +49,38 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.underlined, .nuxt-link-exact-active {
+  position: relative;
+}
+
+.underlined::after { 
+  content: "";
+  position: absolute;
+  top: 240%;
+  display: block;
+  height: 2px;
+  background: #979797;
+}
+
+.nuxt-link-exact-active::after { 
+  background: white;
+  content: "";
+  position: absolute;
+  top: 240%;
+  display: block;
+  height: 2px;
+  width: 100%; 
+}
+
+.underlined:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
 #menu__toggle {
   opacity: 0;
 }
