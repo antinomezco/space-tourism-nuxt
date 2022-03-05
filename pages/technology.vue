@@ -22,11 +22,11 @@
           />
         </div>
 
-        <TheNavTech class="col-span-10 col-start-2 lg:col-span-1 lg:col-start-2 lg:row-span-3" />
+        <TheNavTech class="col-span-10 col-start-2 lg:col-span-1 lg:col-start-2 lg:row-span-3 lg:row-start-3" />
 
-        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-3 lg:text-left">
+        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 md:space-y-0 lg:space-x-12 lg:col-span-4 lg:col-start-3 lg:row-start-4 lg:text-left">
           <div class="space-y-8">
-            <div class="font-barlow-condensed text-sheading-2 font-color-blueish tracking-small-spacing md:regular-text-tablet uppercase">
+            <div class="font-barlow-condensed text-sheading-2 font-color-blueish tracking-small-spacing md:regular-text-tablet uppercase ">
               The terminology...
             </div>
             <div class="font-bellefair text-heading-5-tablet-24 md:text-sheading-1-40 lg:leading-regular-text lg:text-heading-3 uppercase">
@@ -38,7 +38,7 @@
           </div>
         </div>
 
-        <div class="col-span-10 col-start-2 text-center font-barlow regular-text-mobile leading-regular-text-mobile pb-5 font-color-blueish md:text-regular-text-tablet lg:text-regular-text md:leading-regular-text-tablet lg:leading-regular-text lg:col-span-4 lg:col-start-3 lg:text-left">
+        <div class="lg:row-start-5 col-span-10 col-start-2 text-center font-barlow regular-text-mobile leading-regular-text-mobile pb-5 font-color-blueish md:text-regular-text-tablet lg:text-regular-text md:leading-regular-text-tablet lg:leading-regular-text lg:col-span-4 lg:col-start-3 lg:text-left">
           {{
               spaceship.technology[`${$route.query.tech}`]
                 .description
