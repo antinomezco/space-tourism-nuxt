@@ -11,10 +11,10 @@
           </h1>
         </div>
 
-        <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-7 lg:row-span-5">
+        <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-4 lg:row-span-5">
           <div class="">
             <img
-              class="pt-8 lg:px-8 lg:w-full"
+              class="pt-8 lg:mx-8"
               :src=" members.crew[`${$route.query.member}`].images.webp"
             />
           </div>
@@ -24,7 +24,7 @@
 
         <TheNavCrew class="col-span-10 col-start-2 md:order-2 lg:col-span-6 lg:col-start-3 lg:text-left" />
 
-        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 pb-5 md:space-y-0 lg:space-x-12 lg:col-span-6 lg:col-start-3 lg:text-left">
+        <div class="col-span-10 col-start-2 text-center pt-5 lg:self-end space-y-5 pb-5 md:space-y-0 lg:space-x-12 lg:col-span-10 lg:col-start-3 lg:text-left">
           <div class="space-y-2">
             <div class="font-bellefair text-gray-500 text-heading-5-mobile lg:text-heading-4 md:text-heading-5-tablet-24 tracking-small-spacing uppercase">
               {{
@@ -32,7 +32,7 @@
                     .role
                 }}
             </div>
-            <div class="font-bellefair text-sheading-1 md:text-sheading-1-40 lg:text-heading-3">
+            <div class="font-bellefair text-sheading-1 md:text-sheading-1-40 lg:text-heading-2">
               {{
                   members.crew[`${$route.query.member}`]
                     .name

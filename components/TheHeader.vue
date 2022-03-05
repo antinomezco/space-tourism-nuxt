@@ -7,7 +7,7 @@
     <div>
       <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex-row lg:px-8 md:py-5 lg:py-0">
         <li v-for="link in links" :key=link.link_to class="mx-7 lg:my-9 md:my-4">
-          <nuxt-link class="underlined flex nav-text" :to=link.link_to>
+          <nuxt-link class="underlined flex nav-text" :to="{path:link.link_to,query:{id: 0}}">
             <span class="font-bold md:hidden lg:inline">{{link.link_number}}</span>&nbsp;&nbsp;{{link.link_name}}
           </nuxt-link>
         </li>
@@ -40,9 +40,9 @@ export default {
     return {
       links: [
         {link_to: "/", link_name: "Home", link_number: "00 "},
-        {link_to: "destination?celestialbody=0", link_name: "Destination", link_number: "01 "},
-        {link_to: "crew?member=0", link_name: "Crew", link_number: "02 "},
-        {link_to: "technology?tech=0", link_name: "Technology", link_number: "03  "},
+        {link_to: "destination", link_name: "Destination", link_number: "01"},
+        {link_to: "crew", link_name: "Crew", link_number: "02"},
+        {link_to: "technology", link_name: "Technology", link_number: "03"},
       ]
     }
   }
