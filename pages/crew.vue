@@ -1,6 +1,6 @@
 /* eslint-disable no-debugger, no-console */
 <template>
-  <div class="bg-crew-bg-mobile md:bg-crew-bg-tablet lg:bg-crew-bg-desktop text-white md:h-full h-screen bg-cover bg-scroll bg-bottom">
+  <div class="bg-crew-bg-mobile md:bg-crew-bg-tablet lg:bg-crew-bg-desktop text-white md:h-full bg-cover bg-scroll bg-bottom">
     <TheHeader />
     <main class="static container mx-auto">
       <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center">
