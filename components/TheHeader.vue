@@ -7,7 +7,7 @@
     <div>
       <ul class="hidden md:flex header-tablet text-white font-size-planet-data-title uppercase barlow-condensed flex-row lg:px-8 md:py-5 lg:py-0">
         <li v-for="link in links" :key=link.link_to class="mx-7 lg:my-9 md:my-4">
-          <nuxt-link class="underlined flex nav-text" :to="{path:link.link_to,query:{id: 0}}">
+          <nuxt-link class="underlined flex nav-text" :to="{path:link.link_to, query:{id: 0}}">
             <span class="font-bold md:hidden lg:inline">{{link.link_number}}</span>&nbsp;&nbsp;{{link.link_name}}
           </nuxt-link>
         </li>
