@@ -12,15 +12,16 @@
         </div>
 
         <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-4 lg:row-span-5">
-          <div class="">
-            <img
-              class="pt-8 lg:mx-8"
-              :src=" members.crew[`${$route.query.member}`].images.webp"
-            />
-          </div>
+          <img
+            class="pt-8 lg:mx-8"
+            :src=" members.crew[`${$route.query.member}`].images.webp"
+          />
         </div>
 
-        <hr class="col-span-10 col-start-2 block md:hidden border-gray-700 h-5" style="margin-top:-1.5rem;" />
+        <hr
+          class="col-span-10 col-start-2 block md:hidden border-gray-700 h-5"
+          style="margin-top:-1.5rem;"
+        />
 
         <TheNavCrew class="col-span-10 col-start-2 md:order-2 lg:col-span-6 lg:col-start-3 lg:text-left" />
 

@@ -28,7 +28,6 @@ export default {
 .circle {
   height: 15px;
   width: 15px;
-  /* background-color: #555; */
   border-radius: 50%;
 }
 
