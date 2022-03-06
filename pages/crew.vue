@@ -11,7 +11,7 @@
           </h1>
         </div>
 
-        <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-4 lg:row-span-5">
+        <div class="md:text-left grid col-span-6 col-start-4 md:order-3 md:col-span-10 md:col-start-3 lg:col-span-4 lg:row-span-5 ">
           <img
             :alt="`Picture of ${members.crew[`${$route.query.member}`].name}, ${members.crew[`${$route.query.member}`].role}`"
             class="pt-8 lg:mx-8"

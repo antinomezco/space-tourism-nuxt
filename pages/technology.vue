@@ -1,6 +1,6 @@
 /* eslint-disable no-debugger, no-console */
 <template>
-  <div class="bg-tech-bg-mobile md:bg-tech-bg-tablet lg:bg-tech-bg-desktop text-white h-screen lg:h-full bg-scroll bg-bottom">
+  <div class="bg-tech-bg-mobile md:bg-tech-bg-tablet lg:bg-tech-bg-desktop text-white h-screen lg:h-full bg-cover bg-scroll bg-bottom">
     <TheHeader />
     <main class="static mx-auto">
       <div class="grid grid-cols-12 gap-6 lg:grid-flow-col lg:grid-row-5 lg:content-center lg:pb-8">
@@ -13,12 +13,12 @@
 
         <div class="grid col-span-12 col-start-0 lg:col-span-6 lg:row-span-5 lg:col-start-9 lg:justify-end">
           <img
-            :alt="`Picture of ${spaceship.technology[`${$route.query.tech}`].name}`"
+            :alt="`Picture of a ${spaceship.technology[`${$route.query.tech}`].name}`"
             class="w-full lg:hidden"
             :src=" spaceship.technology[`${$route.query.tech}`].images.landscape"
           />
           <img
-            :alt="`Picture of ${spaceship.technology[`${$route.query.tech}`].name}`"
+            :alt="`Picture of a ${spaceship.technology[`${$route.query.tech}`].name}`"
             class="hidden lg:block mb-9"
             :src=" spaceship.technology[`${$route.query.tech}`].images.portrait"
           />
